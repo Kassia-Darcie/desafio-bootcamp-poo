@@ -1,10 +1,7 @@
 package br.com.dio.desafiobootcamp.dominio;
 
 import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class Bootcamp {
     private String nome;
@@ -13,6 +10,18 @@ public class Bootcamp {
     private final LocalDate dataFinal = dataInicial.plusDays(45);
     private Set<Dev> devsInscritos = new HashSet<>();
     private Set<Conteudo> conteudos = new LinkedHashSet<>();
+
+    public Bootcamp() {
+    }
+
+    public void imprimirRanking() {
+        List<Dev> ranking = devsInscritos.stream()
+                .sorted((dev1, dev2) -> Double.compare(dev2.calcularTotalXp(), dev1.calcularTotalXp()))
+                .toList();
+        for (int i = 0;i < ranking.size();i++) {
+            System.out.println((i + 1) + ". " + ranking.get(i).getNome() + " " + ranking.get(i).calcularTotalXp());
+        }
+    }
 
     public String getNome() {
         return nome;
