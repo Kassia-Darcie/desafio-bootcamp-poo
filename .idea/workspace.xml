@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="946ff2a1-819c-4e98-8e2b-10e148ec46dd" name="Changes" comment="criação das classes Dev e Bootcamp">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="946ff2a1-819c-4e98-8e2b-10e148ec46dd" name="Changes" comment="criado método imprimirRanking na classe Bootcamp e exemplo de implementação">
+      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafiobootcamp/dominio/Comentario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafiobootcamp/dominio/Forum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/dio/desafiobootcamp/dominio/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/dio/desafiobootcamp/dominio/Bootcamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/dio/desafiobootcamp/dominio/Bootcamp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +30,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2i3UXJEmc6eGekxs4L74Bdoxq89" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -38,16 +41,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "D:/dev/cursos/dio-bootcamp-java-santander/desafio-bootcamp-poo/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/dev/cursos/dio-bootcamp-java-santander/desafio-bootcamp-poo/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -102,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718736191510</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="criado método imprimirRanking na classe Bootcamp e exemplo de implementação">
+      <option name="closed" value="true" />
+      <created>1718744406886</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718744406886</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +131,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="criação das classes de Conteudo" />
     <MESSAGE value="criação das classes Dev e Bootcamp" />
-    <option name="LAST_COMMIT_MESSAGE" value="criação das classes Dev e Bootcamp" />
+    <MESSAGE value="criado método imprimirRanking na classe Bootcamp e exemplo de implementação" />
+    <option name="LAST_COMMIT_MESSAGE" value="criado método imprimirRanking na classe Bootcamp e exemplo de implementação" />
   </component>
 </project>
