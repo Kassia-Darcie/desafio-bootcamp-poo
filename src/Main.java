@@ -62,6 +62,8 @@ public class Main {
             post.getComentarios().forEach(System.out::println);
             System.out.println("----------------\n");
         });
+
+        System.out.println("Quantidade de posts de kassia: " + devKassia.getBootcampInscrito().getForum().getPosts().size());
     }
 
 

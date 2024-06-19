@@ -6,6 +6,7 @@ import java.util.Objects;
 import java.util.Set;
 
 public class Post {
+    private static final double XP_PADRAO = 30d;
     private static int SEQUENCIAL = 1;
     private int id;
     private Dev autor;
@@ -19,6 +20,10 @@ public class Post {
         this.autor = autor;
         this.titulo = titulo;
         this.conteudo = conteudo;
+    }
+
+    public double calcularXp() {
+        return XP_PADRAO + comentarios.size() * 5d;
     }
 
     public int getId() {

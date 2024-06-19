@@ -7,6 +7,8 @@ import java.util.Set;
 
 public class Dev {
     private String nome;
+
+    private Bootcamp bootcampInscrito;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
@@ -15,6 +17,7 @@ public class Dev {
     }
 
     public void inscreverBootcamp(Bootcamp bootcamp) {
+        this.bootcampInscrito = bootcamp;
         this.conteudosInscritos.addAll(bootcamp.getConteudos());
         bootcamp.getDevsInscritos().add(this);
     }
@@ -30,10 +33,15 @@ public class Dev {
     }
 
     public double calcularTotalXp() {
-        return conteudosConcluidos
+        double xpDeConteudo = conteudosConcluidos
                 .stream()
                 .mapToDouble(Conteudo::calcularXp)
                 .sum();
+        double xpDePostagens = bootcampInscrito.getForum().getPosts()
+                .stream()
+                .mapToDouble(Post::calcularXp)
+                .sum();
+        return xpDeConteudo + xpDePostagens;
     }
 
     public String getNome() {
@@ -42,6 +50,14 @@ public class Dev {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public Bootcamp getBootcampInscrito() {
+        return bootcampInscrito;
+    }
+
+    public void setBootcampInscrito(Bootcamp bootcampInscrito) {
+        this.bootcampInscrito = bootcampInscrito;
     }
 
     public Set<Conteudo> getConteudosInscritos() {
